@@ -13,6 +13,9 @@
         font-size: 16px;
         text-indent: 1px;
     }
+    .function_info p {
+      font-size: 10px;
+    }
 
   
   }
@@ -52,6 +55,9 @@
     }
     #left{
         font-size: 10px;
+    }
+    .welcome_block p{
+        font-size: 12px;
     }
 
     
@@ -99,6 +105,7 @@
     .function_block{
         max-width:290px !important;
         margin:10px 0;
+        flex-direction: column;
     }
     .button_image img{
         max-width:290px;
@@ -106,8 +113,12 @@
     footer{
         font-size: 8px;
     }
-    #left{
-        font-size: 8px;
+    .function_info p {
+        display: none;
+    }
+
+    .image_function{
+        width:100%;
     }
   }
   
