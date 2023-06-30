@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 from database import user_info_capture
 
+
 app = Flask(__name__)
 
 
