@@ -1,6 +1,7 @@
 from sqlalchemy import create_engine, text
 import os
 
+
 KEY  = os.environ.get('KEY_DB')
 
 db_string = 'mysql+pymysql://63dp0wrpbxdb8o98y9t2:'+ KEY +'@aws.connect.psdb.cloud/indevo?charset=utf8mb4'
