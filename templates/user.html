@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/css.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/google.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/media.css')}}">
+    <link rel="icon" href="{{url_for('static', filename= 'img/IndEvo_logo_icon.png')}}"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <title>{{company_name}}</title>
+</head>
+
+<body>
+    <header>
+        {% include 'header.html' %}
+
+    </header>
+    <main>
+    {% include 'user_info.html' %}
+
+    </main>
+    <footer>
+        {% include 'footer.html' %}
+    </footer>
+</body>
+
+</html>
