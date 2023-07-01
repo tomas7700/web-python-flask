@@ -36,3 +36,16 @@ def load_info(id):
             return None
         else:
             return rows
+ 
+def insert_user_info_in_db(id, data):
+     with engine.connect() as conn:
+          
+          name= str(data['user'])
+
+          mail=str(data['email'])
+
+          password= str(data['password'])
+
+          result = text("INSERT INTO user_log_info (name,mail,password) values ( ' """ + name +""" ' , ' """+ mail+ """ ' , ' """+ password +""" ' ) """ )
+          conn.execute(result)
+

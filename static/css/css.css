@@ -209,8 +209,8 @@ header{
 /* footer */
 footer{
 
-    background-color: #61A3D5;
-    height: 150px;
+    background-color: #35a7ff97;
+    height: 40vh;
     display: flex;
     flex-direction:row ;
 }
@@ -288,7 +288,7 @@ footer{
 .form_container input {
     border-radius: 10px;
     border: 1px green solid;
-    height: 30px;
+    height: 10px;
     width: 100%;
 }
 #submit{
