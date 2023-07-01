@@ -1,12 +1,32 @@
 <div class="content">
 <ul>
-    {%for user in user %}
+    {%for user in info %}
     <li><a href="">{{user['name']}}</a></li>
     <li><a href="">{{user['mail']}}</a></li>
     <li><a href="">{{user['password']}}</a></li>
     {% endfor %}
 </ul>
+
+<div class="form_container">
+
+    
+<form action="/user/2/sign">
+    <label for="email">email:</label>
+    <br>
+    <input type="email" name="email" id="email">
+    <br><br><br>
+    <label for="password">password</label>
+    <br>
+    <input type="password" name="password" id="password">
+
+    <input type="submit" id="submit">
+
+</form>
+
+
  
+</div>
+
    
 
 </div>

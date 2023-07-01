@@ -100,7 +100,13 @@
             <img src="{{url_for('static', filename= 'img/land.jpg')}}" alt="">
 
         </div>
+     <div class="button">
 
+        {% for id in info %}
+
+        <button><a href="/user/{{id['id']}}">{{id['name']}}</a></button>
+        {% endfor %}
+     </div>
     </div>
 
 </div>
